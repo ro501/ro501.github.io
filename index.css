@@ -89,8 +89,8 @@ article{
     font-size: x-large;
     text-shadow: 2px 2px 2px black;
 }
-p{
-  font-size: 100px;
+.para{
+  font-size: 200px;
   font-style: italic;
   font-family: 'wonderland', cursive;
 }
