@@ -93,6 +93,10 @@ p{
   font-size: 20px;
   font-style: italic;
 }
+li{
+  font-size: 20px;
+  font-style: italic; 
+}
 * {box-sizing:border-box}
 
 /* Slideshow container */
