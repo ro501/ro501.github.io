@@ -92,11 +92,11 @@ article{
 p{
   font-size: 100px;
   font-style: italic;
+  font-family: 'wonderland', cursive;
 }
 li{
   font-size: 30px;
   font-style: italic; 
-  font-family: 'wonderland', cursive;
 }
 * {box-sizing:border-box}
 
