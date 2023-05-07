@@ -21,6 +21,10 @@ body{
 .link2{
     color:white;
 }
+.center{
+  display: flex;
+  justify-content: center;
+}
 .container{
     display: flex;
     float: right;
