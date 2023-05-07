@@ -24,7 +24,10 @@ body{
 .container{
     display: flex;
     float: right;
-
+}
+.containers{
+    display: flex;
+    float: center;
 }
 .social1{
     font-size: 30px;
