@@ -25,6 +25,15 @@ body{
     display: flex;
     float: right;
 }
+.social11{
+    display: flex;
+    font-size: 30px;
+    height:60px;
+    width:60px;
+    color:white;
+    text-align: center;
+    margin: auto;
+}
 .social1{
     font-size: 30px;
     height:60px;
@@ -34,6 +43,10 @@ body{
 .social1:hover{
    font-size: 50px; 
 }
+.social11:hover{
+  font-size: 50px; 
+}
+
 h1{
     color:white;
     text-shadow: 2px 2px 2px pink;
