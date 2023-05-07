@@ -27,7 +27,8 @@ body{
 }
 .containers{
     display: flex;
-    float: center;
+    float: left;
+    font-align:center;
 }
 .social1{
     font-size: 30px;
