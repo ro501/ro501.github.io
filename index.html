@@ -11,7 +11,7 @@
     <title>Shreya Mandal</title>
 </head>
 <body>
-  <audio id="aud1" controls autoplay hidden  >
+  <audio id="aud1">
     <source src="./gift/happy-birthday-another-version-117436.mp3" type="audio/mpeg" >
 </audio>
     <header>
@@ -74,6 +74,7 @@
     </footer>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
+      const aud=document.getElementById("aud1");
         var typed = new Typed('#element', {
           strings: ['Web Developer', 'Programming' , 'Story','2D animations'],
           typeSpeed: 60,
@@ -86,6 +87,7 @@
               setTimeout(
                   function open(event){
                       document.querySelector(".popup").style.display="block"
+                      aud.play();
                   },6000
               )
           });
