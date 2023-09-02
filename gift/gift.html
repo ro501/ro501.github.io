@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gift.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Dancing+Script&family=Poppins:wght@600&family=Satisfy&display=swap" rel="stylesheet">
+    <title>Gift</title>
+</head>
+<body>
+    <center><h1>Hey Shreya</h1></center>
+    <center><p><h2>I hope your birthday is as special as you are. You deserve all the good things in life.</h2></p></center>
+    <audio id="aud1" controls autoplay hidden  >
+        <source src="./happy-birthday-another-version-117436.mp3" type="audio/mpeg" >
+    </audio>
+    <center><button class="order" id="order">My Gift</button>
+    <a href="../index.html"><button class="back" id="back">back </button></a>
+    <section id = "hidd">
+             <button id="close">&times;</button>
+            <h1>Address please</h1>
+            <textarea name="text area" id="text" cols="30" rows="10"  placeholder="Enter your address" ></textarea><br>
+            <button id ="submit">Submit</button>
+    </section>
+      
+</center>
+</body>
+<script type="text/javascript">
+    document.querySelector("#order").addEventListener("click",
+        function(){
+          document.querySelector("#hidd").style.display ="block"
+        }
+      )
+
+      document.querySelector("#close").addEventListener("click",
+        function(){
+          document.querySelector("#hidd").style.display ="none"
+        }
+      )
+
+</script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="gift.js"></script>
+</html>

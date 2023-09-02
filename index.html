@@ -2,85 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./index.css">
-    <title>Shreya-mandal.in</title>
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <title>Shreya Mandal</title>
 </head>
 <body>
-    <div class="container">
-        <div class="social1"><a href="https://sapsbokaro.in" class="link2"><i class="fa-solid fa-building-columns"></i></a></div>
-        <div class="social1"><a href="https://www.instagram.com/s_hreya.m/" class="link2"><i class="fa-brands fa-instagram"></i></a></div>
-        <div class="social1"><a href="https://github.com/Shreya-mandal889" class="link2"><i class="fa-brands fa-github"></i></a></div>
-    </div>
-    <header align="center">
-    <img src="./tra.jpg" alt="error to load image"  class="image" ><br>
-    <h1 id="hov">Shreya Mandal</h1>
-    </header>
-    <marquee><h2>welcome to shreya's world.........</h2></marquee>
-    <section>
+    <header>
         <nav>
-          <h4>
-            <h2 class="project"> hobby </h2>
-              <ol>
-                   <li>Music</li>
-                   <li>Dance</li>
-                   <li>Story</li>
-                   <li>Programming</li>
-              </ol>
-          <h4>
+            <div class="left">Shreya's portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#contact">Contact ME</a></li>
+                </ul>
+            </div>
         </nav>
-        <div id="about">
-        <h1>ABOUT ME:</h1>
-        <article>
-            <h4>
-            <p>Shreya is a young girl who recently completed her 12th grade in 2022.
+    </header>
+    <main>
+        <section class="firstSection" id="home">
+            <div class="leftSection">
+                Hi,My name is <span class="purple">Shreya</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="./trb.png" alt="Err to img">
+            </div>
+        </section>
+        <hr>
+        <section class="about" id="about">
+          <article>
+           <center><h1>About</h1></center>
+            <p>
+              I am a young girl who recently completed her 12th grade in 2022.
                She has a passion for music and dance and spends much of her free time 
-               practicing and performing. She also enjoys reading stories and programming.
+               practicing and performing. I also enjoy reading stories, 2D animations, and programming.
                Her interest in cyber security has led her to pursue research in this field. 
-               Shreya is a hardworking and dedicated individual who is always eager to learn new things.
-            </p>
-            </h4>
-        </article>
+               I am a hardworking and dedicated individual who is always eager to learn new things.</p>
+          </article>
+        </section>
+      <hr>
+    </main>
+    <footer>
+      <section class="contact" id="contact">
+        <center><h1>Contact Me </h1>
+        <a href="https://www.instagram.com/s_hreya.m/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/Shreya-mandal889"><i class="fa-brands fa-github"></i></a>
+        <br>
+       <h3>©Shreya.in</h3>
+      </center> 
       </section>
-    </div>
-      <section align="center">
-        <!-- Slideshow container -->
-<div class="slideshow-container">
-
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 2</div>
-      <img src="./trb.png"  width="400" height="650px" class="imo">
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 2</div>
-      <img src="./tra.jpg"  width="400" height="650px" class="imo">
-    </div>
-  
-  
-  <!-- The dots/circles -->
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-  </div>
-  <script src="./index.js"></script>
+      <section class="pop">
+        <div class="popup">
+          <button id="close">&times;</button>
+            <h2>Happy birthday to you</h2>
+            <h2>Happy birthday to you</h2>
+            <h2>Happy birthday dear Shreyaaa..</h2>
+            <h2>Happy birthday to you</h2>
+            <h2>🥳🥳🥳</h2>
+            <a href="./gift/gift.html"><button id="next">GIFT</button></a>
+        </div>
       </section>
-      
-      <footer align="center">
-          <p class="footer">
-             <h2>&copy; Shreya-mandal.in<br></h2>
-          </p>
-         <p><b>About Developer</b><br>
-                This site is made by Ro706
-           <div class="center">
-               <div class="social1"><a href="https://www.instagram.com/programmer_ro706/" class="link2" ><i class="fa-brands fa-instagram"></i></a></div>
-               <div class="social1"><a href="https://github.com/Ro706" class="link2"><i class="fa-brands fa-github"></i></a></div>
-          </div>
-                
-          </p>
-      </footer> 
-</body>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Programming' , 'Story','2D animations'],
+          typeSpeed: 60,
+        });
+      </script>
+      <script src="https://kit.fontawesome.com/4f928f5798.js" crossorigin="anonymous"></script>
+      <script type="text/javascript">
+        window.addEventListener("load",
+          function(){
+              setTimeout(
+                  function open(event){
+                      document.querySelector(".popup").style.display="block"
+                  },6000
+              )
+          });
+          document.querySelector("#close").addEventListener("click",
+            function(){
+              document.querySelector(".popup").style.display ="none"
+            }
+          )
+      </script>
+    </body>
 </html>

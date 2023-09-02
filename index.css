@@ -1,175 +1,296 @@
+
+
+*,*:before,*:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body{
-    background-color: black;
-    background-image: url(./background.jpeg);
-    background-repeat:repeat;
-    color: white;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-style: italic;
+  background-color: rgb(0,0,33);
+  color: white;
+  font-family: 'Alkatra', cursive;
+  font-family: 'Poppins', sans-serif;
 }
-#pu{
-  color:white;
-  text-shadow: 2px 2px 2px black;
-  font-family: 'wonderland', cursive;
-  font-size: large;
+nav{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(18, 18, 62);
 }
-.link{
-    color: orange;
-    text-decoration: none;
-    text-shadow: 2px 2px 2px  red;
-}
-.link2{
-    color:white;
-}
-.center{
+nav ul{
   display: flex;
   justify-content: center;
 }
-.container{
-    display: flex;
-    float: right;
+nav ul li{
+  list-style: none;
+  margin: 0 23px;
 }
-.social1{
-    font-size: 30px;
-    height:60px;
-    width:60px;
-    color:white; 
+nav ul li a{
+  text-decoration: none;
+  color: white;
 }
-.social1:hover{
-   font-size: 50px; 
+nav ul li a:hover{
+  text-decoration:underline;
+  color: blueviolet;
 }
-.social11:hover{
-  font-size: 50px; 
-}
+main hr{
+  border: 0;
+  background-color: #9c97f1;
+  height: 1.2px;
+  margin: 60px 84px;
 
-h1{
-    color:white;
-    text-shadow: 2px 2px 2px pink;
-    font-family: 'wonderland', cursive;
-} 
-h2{
-    text-shadow: 2px 2px 2px hotpink;
-    text-align: center;
-    font-family: 'wonderland', cursive;
-    font-size: xx-large;
 }
-h1:hover{
-    color: orange;
+.purple,#element{
+  color: blueviolet;
 }
-nav {
-  float: left;
-  width: 30%;
-  height: 300px;
-  background: transparent;
-  padding: 20px;
+nav .left{
+  font-size: xx-large;
 }
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
+.firstSection .leftSection{
+  margin-top:50px;
+  font-size: 40px;
+  align-items: left;
+  padding-left: 250px;
+  width:50%;
 }
-
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
+.firstSection .rightSection{
+  margin-left:1450px ; 
+  margin-top:-170px;
 }
-.image{
-    width:200px;
-    height: auto;
-    border-radius: 60%;
-    align-items: center;
+.firstSection .rightSection img{
+  width:230px;
+  height: auto;
+  left :100px;
+  border-radius: 30px;;
 }
-.image:hover{
-    width:230px;
-    height: auto;
+.about{
+  padding-left: 40px;
 }
-.project{
-    text-align: left;
-    font-family: 'wonderland', cursive;
-    font-size: xx-large;
-}
-article{
-    text-align: right-;
-    color: white;
-    font-size: x-large;
-    text-shadow: 2px 2px 2px black;
-}
-.para{
-  font-size: 200px;
+.about h1{
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
-  font-family: 'wonderland', cursive;
+  font-weight: 600;
+  text-decoration: underline;
+  background: linear-gradient(to left,
+  hsl(304, 100%, 62%),
+  hsl(0, 0%, 60%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-li{
-  font-size: 30px;
-  font-style: italic; 
+.about p{
+  padding: 20px;
+  font-size: 25px;
 }
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+.contact{
+  padding-left: 40px;
 }
-
-/* Hide the images by default */
-.mySlides {
+.contact h1{
+  font-size: 45px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  text-decoration: underline;
+  background: linear-gradient(to left,
+  hsl(304, 100%, 62%),
+  hsl(0, 0%, 60%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contact .fa-brands{
+  padding: 20px;
+  font-size: 50px;
+  color : white;
+}
+.popup{
+  background-color: aliceblue;
+  width:420px;
+  padding:30px 40px;
+  position: absolute;
+  transform: translate(-50% ,-50%);
+  left:50%;
+  top:50%;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Alkatra', cursive;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Poppins', sans-serif;
+  font-style:italic ;
   display: none;
 }
-.imo{
-  border-radius: 100px;;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
+#close{
+  display: block;
+  margin: 0 0 20px auto;
+  background: transparent;
+  font-size: 30px;
+  border-radius: 100%;
+  width: 40px;
+  height:40px;
+  border:none;
+  outline:none;
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+  background:  rgb(37, 37, 255);
+  color:white
+}
+.popup h1,h2{
+  color:black;
+} 
+#next{
+  border-radius:10px ;
+  width:100px;
+  height:40px;
+  color:white;
+  background: rgb(1, 64, 255);
 }
 
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-.footer{
-    text-align: center;
+@media screen and (max-width:600px) {
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background-color: rgb(0,0,33);
     color: white;
-    font-family: 'wonderland', cursive;
-    font-size: x-large;
+    font-family: 'Alkatra', cursive;
+    font-family: 'Poppins', sans-serif;
+  }
+  nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18, 18, 62);
+  }
+  nav ul{
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li{
+    list-style: none;
+    margin: 0 20px;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  nav ul li a:hover{
+    text-decoration:underline;
+    color: blueviolet;
+  }
+  main hr{
+    border: 0;
+    background-color: #9c97f1;
+    height: 1.2px;
+    margin: 60px 84px;
+  
+  }
+  .purple,#element{
+    color: blueviolet;
+  }
+  nav .left{
+    margin-left: 25px;
+    font-size: 17px;
+  }
+  .firstSection .leftSection{
+    margin-top:-250px;
+    font-size: 25px;
+    align-items: left;
+    margin-bottom: 500px;
+    padding-top: 320px;
+    padding-left: 50px;
+    width:100%;
+  }
+  .firstSection .rightSection{
+    margin-left:150px ; 
+    margin-top:-470px;
+  }
+  .firstSection .rightSection img{
+    width:230px;
+    height: auto;
+    margin-left :-100px;
+    border-radius: 30px;;
+  }
+  hr{
+    margin-top: 3000px;
+  }
+  .about{
+    padding-top:100px;
+    padding-left: 40px;
+  }
+  .about h1{
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    text-decoration: underline;
+    background: linear-gradient(to left,
+    hsl(304, 100%, 62%),
+    hsl(0, 0%, 60%)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .about p{
+    padding: 20px;
+    font-size: 20px;
+  }
+  .contact{
+    padding-left: 40px;
+  }
+  .contact h1{
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    text-decoration: underline;
+    background: linear-gradient(to left,
+    hsl(304, 100%, 62%),
+    hsl(0, 0%, 60%)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .contact .fa-brands{
+    padding: 20px;
+    font-size: 40px;
+    color : white;
+  }
+  .popup{
+    background-color: aliceblue;
+    width:280px;
+    padding:30px 40px;
+    position: absolute;
+    transform: translate(-50% ,-50%);
+    left:50%;
+    top:50%;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Alkatra', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-style:italic ;
+    display: none;
+  }
+  #close{
+    display: block;
+    margin: 0 0 20px auto;
+    background: transparent;
+    font-size: 30px;
+    border-radius: 100%;
+    width: 40px;
+    height:40px;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    background:  rgb(37, 37, 255);
+    color:white
+  }
+  .popup h1,h2{
+    font-size: 16px;
+    color:black;
+  } 
+
 }

@@ -1,0 +1,79 @@
+body{
+    background-color: rgb(18, 18, 62);
+    color:white;
+    font-family: 'Alkatra', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Satisfy', cursive;
+}
+#order{
+    background: linear-gradient(to left,
+  hsl(206, 100%, 50%),
+  hsl(247, 100%, 50%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color:transparent;
+   border-radius: 5px;
+   border: 1px solid white;
+   font-size: 20px;
+   font-family: 'Alkatra', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Satisfy', cursive;
+    padding:6px;
+}
+#back{
+    background: linear-gradient(to left,
+  hsl(206, 100%, 50%),
+  hsl(247, 100%, 50%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color:transparent;
+   border-radius: 5px;
+   border: 1px solid white;
+   font-size: 20px;
+   font-family: 'Alkatra', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Satisfy', cursive;
+    padding:6px;
+}
+section {
+    padding: 10px;
+}
+#hidd{
+    display: none;
+}
+textarea{
+    resize: none;
+}
+#submit{
+    background: linear-gradient(to left,
+  hsl(206, 100%, 50%),
+  hsl(247, 100%, 50%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color:transparent;
+   border-radius: 5px;
+   border: 1px solid white;
+   font-size: 20px;
+   font-family: 'Alkatra', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Satisfy', cursive;
+    padding:6px;
+}
+#close{
+    display: block;
+    margin: 0 0 20px auto;
+    background: transparent;
+    font-size: 30px;
+    border-radius: 100%;
+    width: 40px;
+    height:40px;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    background:  rgb(37, 37, 255);
+    color:white;
+  }
