@@ -142,8 +142,14 @@ nav .left{
   border-radius:10px ;
   width:100px;
   height:40px;
-  color:white;
-  background: rgb(1, 64, 255);
+  background: linear-gradient(to left,
+  hsl(237, 100%, 50%),
+  hsl(190, 100%, 50%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border:1px solid black;
+  font-weight: 600;
 }
 
 @media screen and (max-width:600px) {

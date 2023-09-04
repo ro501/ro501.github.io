@@ -8,8 +8,8 @@ body{
 }
 #order{
     background: linear-gradient(to left,
-  hsl(206, 100%, 50%),
-  hsl(247, 100%, 50%)
+  hsl(27, 100%, 50%),
+  hsl(63, 100%, 59%)
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color:transparent;
@@ -21,11 +21,12 @@ body{
     font-family: 'Poppins', sans-serif;
     font-family: 'Satisfy', cursive;
     padding:6px;
+    font-weight: 600;
 }
 #back{
     background: linear-gradient(to left,
-  hsl(206, 100%, 50%),
-  hsl(247, 100%, 50%)
+  hsl(66, 100%, 50%),
+  hsl(113, 100%, 50%)
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color:transparent;
@@ -37,6 +38,7 @@ body{
     font-family: 'Poppins', sans-serif;
     font-family: 'Satisfy', cursive;
     padding:6px;
+    font-weight: 600;
 }
 section {
     padding: 10px;
